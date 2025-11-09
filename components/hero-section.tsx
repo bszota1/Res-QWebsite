@@ -64,8 +64,8 @@ export default function HeroSection({ scrollY }: HeroSectionProps) {
     }
 
     const animate = () => {
-      ctx.fillStyle = "rgba(255, 247, 237, 0.05)" // Longer trails (was 0.1) //kolor tla gridu
-      ctx.fillRect(0, 0, canvas.width, canvas.height)
+      // Clear canvas completely for each frame to prevent darkening
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       particles.forEach((particle) => {
         particle.update()
