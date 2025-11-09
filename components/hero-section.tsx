@@ -64,8 +64,8 @@ export default function HeroSection({ scrollY }: HeroSectionProps) {
     }
 
     const animate = () => {
-      // Clear canvas completely for each frame to prevent darkening
-      ctx.clearRect(0, 0, canvas.width, canvas.height)
+      ctx.fillStyle = "rgba(255, 247, 237, 0.05)" // Longer trails (was 0.1) //kolor tla gridu
+      ctx.fillRect(0, 0, canvas.width, canvas.height)
 
       particles.forEach((particle) => {
         particle.update()
@@ -95,7 +95,7 @@ export default function HeroSection({ scrollY }: HeroSectionProps) {
   }, [])
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-slate-700 via-slate-700 to-slate-700">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-orange-50 via-orange-50 to-orange-50">
       <canvas ref={canvasRef} className="absolute inset-0 z-0" />
 
       {/* Grid background */}
