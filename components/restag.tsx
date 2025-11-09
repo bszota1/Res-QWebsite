@@ -37,12 +37,8 @@ export default function ResTagSection() {
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-blue-500/20 rounded-3xl blur-3xl" />
 
-              {/* Obrazek urządzenia */}
-              {/* Pamiętaj, aby podmienić 'Gemini_Generated_Image_hsoiqghsoiqghsoi.jpg' 
-                  na właściwą ścieżkę w Twoim projekcie, np. '/images/res-tag-device.jpg' 
-              */}
               <img
-                src="/Gemini_Generated_Image_hsoiqghsoiqghsoi.png" // <-- ZMIEŃ TĘ ŚCIEŻKĘ
+                src="/Gemini_Generated_Image_hsoiqghsoiqghsoi.png" 
                 alt="Res-Tag Emergency Locator Device"
                 className="relative z-10 rounded-2xl border border-blue-500/30 shadow-3xl shadow-black/30"
               />
